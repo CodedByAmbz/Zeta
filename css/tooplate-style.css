@@ -598,6 +598,10 @@ http://www.tooplate.com/view/2106-soft-landing
     box-sizing: border-box;
     margin: 10px;
   }
+
+  .feature-image img {
+    max-height: 260px;
+  }
   
   .gallery-item img {
     width: 100%;
