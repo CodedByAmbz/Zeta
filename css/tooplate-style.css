@@ -599,7 +599,7 @@ http://www.tooplate.com/view/2106-soft-landing
     margin: 10px;
   }
 
-  .feature-image img {
+  #feature img .image-responsive {
     max-height: 260px;
   }
   
