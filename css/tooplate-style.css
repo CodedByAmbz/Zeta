@@ -525,7 +525,7 @@ http://www.tooplate.com/view/2106-soft-landing
     display: inline-block;
     position: relative;
     float: right;
-    width: 350px;
+    width: 320px;
     height: 177.6px;
     background-color: #f2f8f9;
     border-radius: 10px;
@@ -831,6 +831,7 @@ http://www.tooplate.com/view/2106-soft-landing
   .feature-image {
     position: absolute;
     bottom: -27em;
+    max-height: 620px;
   }
 
   @media only screen and (max-width: 770px) {
@@ -950,17 +951,26 @@ http://www.tooplate.com/view/2106-soft-landing
     text-indent: -5px;
   }
 
-  ul.dashed > li:before {
-    content: "-";
-    text-indent: -5px;
-    font-size: 25px;
-    color: #1479EA;
-  }
+  
 
   .dashed-title {
     font-size: 15px;
     font-weight: bold;
   }
+
+  #footer .footer-logo {
+    max-height: 70px;
+    max-width: 40%;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  #footer .container .copyright-text .policies {
+    padding-left: 5px;
+  } 
+
 
   /*
   Phone alterations
