@@ -977,88 +977,91 @@ http://www.tooplate.com/view/2106-soft-landing
   */
 
   @media only screen and (max-width: 660px) {
+    /* Adjusting the feature section text sizes */
     #feature-2 .section-title h1 {
-      font-size: 2em;
+        font-size: 2em;
     }
 
     #feature-2 .section-title h2 {
-      font-size: 1em;
+        font-size: 1em;
     }
 
     #feature-2 .nav>li>a {
-      font-size: 0.8em;
+        font-size: 0.8em;
     }
 
+    /* Hiding testimonial images and adjusting the info section */
     #testimonial .testimonial-image {
-      display: none;
+        display: none;
     }
 
     #testimonial .testimonial-info {
-      height: 350px;
-    }
-
-    #testimonial .testimonial-info h1 {
-      font-size: 1.5em;
+        height: 350px;
+        font-size: 1.5em;
     }
 
     #testimonial .testimonial-info h3 {
-      font-size: 1em;
+        font-size: 1em;
     }
 
+    /* Ensuring the section title process is properly styled */
     .phone-process .section-title-process {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
+      position: relative;
+      z-index: 2; /* Ensure it's above the cards */
+      width: 100%;
+      text-align: center;
+      padding: 0 20px;
+      margin: 0 auto 70px;
     }
 
     .phone-process .section-title-process button {
-      justify-content: center;
+      display: block;
+      margin: 0 auto 50px; /* Adjust bottom margin to prevent overlap */
+      width: 200px;
     }
 
-    .phone-process  {
-      max-width: 100%;
-      padding: 30px;
-      margin-top: 10px;
+    /* Setting up the process row */
+    .phone-process {
+        max-width: 100%;
+        padding: 30px;
+        margin-top: 10px;
     }
 
     .phone-process #process {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
-      text-align:center;
-      justify-content: center;
+      margin: 0 auto;
+      padding: 0 10px;
     }
 
-    #process .phone-process .section-title-process h1 {
-      font-size: 1.5em;
-    }
-
-    ul.nav.nav-tabs {
-      column-count: 3;
-      overflow-x:scroll;
-      overflow-y:hidden;
-    }
-
-    #web-process{
-      display: none;
-    }
-
-    .navbar-brand {
-      float: left;
-      width: 100px;
-      height: 60px;
-    }
-
+    /* Card specific styles */
     .phone-process .card {
-      max-width: 240px;
+      position: relative;
+      z-index: 1; /* Lower than the button's z-index */
+      max-width: 280px;
+      width: 100%; /* Force width for better control */
+      margin: 20px auto; /* Add space for visual separation */
+      text-align: center;
     }
 
-  }
+    .phone-process .card:first-of-type {
+      margin-top: 50px; /* Increased margin for the first card */
+    }
 
 
-  @media only screen and (min-width: 661px) {
-    .phone-process {
+    .container #web-process {
       display: none;
-      }
-  }
+    }
+}
+
+
+@media only screen and (min-width: 661px) {
+    .phone-process {
+        display: none;
+    }
+}
 
   
 
